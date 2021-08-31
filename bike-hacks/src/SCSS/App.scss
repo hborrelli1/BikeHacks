@@ -1,0 +1,14 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@import './variable';
+@import '../Components/Nav/Nav.scss';
+@import '../Components/TitleSection/TitleSection.scss';
+@import '../Components/TutorialsList/TutorialsList.scss';
+@import '../Components/Tutorial/Tutorial.scss';
+
+

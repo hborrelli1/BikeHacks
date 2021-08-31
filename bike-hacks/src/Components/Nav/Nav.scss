@@ -1,0 +1,27 @@
+header {
+  background-color: $brand-dark-green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-flow: wrap;
+  padding: 8px 10px;
+  .logo-block {
+    max-width: 250px;
+    display: block;
+    img {
+      width: 100%;
+    }
+  }
+  nav {
+    a {
+      color: $brand-lime-green;
+      text-decoration: none;
+      transition: all .3s;
+      font-size: 1.125rem;
+      &:hover {
+        color: darken($brand-lime-green, 25%);
+        transition: all .3s;
+      }
+    }
+  }
+}
