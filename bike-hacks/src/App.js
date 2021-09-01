@@ -19,7 +19,7 @@ function App() {
 
   useEffect(() => {
     // Request data from http server on mount.
-    const data = fetch('api/')
+    const data = fetch('server/')
       .then(res => res.json())
       .then(data => setTutorials(data));
 
