@@ -1,0 +1,36 @@
+.not-found-page {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    background-color: rgba($brand-gray, .6);
+    backdrop-filter: blur(2px);
+    padding: 50px 75px;
+    line-height: 2rem;
+    h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      font-size: 1.125rem;
+      transition: all .3s;
+      img {
+        margin-right: 10px;
+      }
+      &:hover {
+        img {
+          transform: translate(-10px, 0%);
+          transition: all .3s;
+        }
+      }
+    }
+  }
+}

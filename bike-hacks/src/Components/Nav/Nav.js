@@ -1,20 +1,18 @@
-import {Link, Route, useLocation} from 'react-router-dom';
+import {Link, useLocation} from 'react-router-dom';
 
 const Nav = () => {
-const location = useLocation();
-  console.log('location:', location);
+  const location = useLocation();
+
   return (
-    <header>
+    <header className="nav-bar" id="navBar">
       <Link to="/" className="logo-block">
         <img src="/assets/logos/BikeHacks-Logo-Green.png" alt="Bike Hacks Logo" />
       </Link>
-      {
-        location.pathname !== '/' && (
-          <nav>
-            <Link to="/">Back to all tutorials</Link>
-          </nav>
-        )
-      }
+      {location.pathname !== '/' && (
+        <nav>
+          <Link to="/">Back to all tutorials</Link>
+        </nav>
+      )}
     </header>
   );
 }

@@ -1,3 +1,38 @@
-.tutorials-list {
+.tutorials-list-container {
   text-align: center;
+  padding: 30px;
+  .tutorials-header {
+    h2 {
+      margin: 0px 0px 30px;
+      font-size: 2rem;
+    }
+  }
+  .tutorials-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+    a {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      max-width: 500px;
+      padding: 10px 50px;
+      margin-bottom: 10px;
+      text-align: left;
+      text-decoration: none;
+      color: $brand-black;
+      font-size: 1.125rem;
+      img {
+        max-width: 40px;
+        margin-right: 20px;
+      }
+      &:nth-child(odd) {
+        background-color: $brand-gray;
+      }
+      &:hover {
+        background-color: darken($brand-gray, 5%);
+      }
+    }
+  }
 }

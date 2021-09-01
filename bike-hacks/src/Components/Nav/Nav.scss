@@ -1,10 +1,10 @@
-header {
-  background-color: $brand-dark-green;
+.nav-bar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-flow: wrap;
-  padding: 8px 10px;
+  background-color: $brand-dark-green;
+  align-items: center;
+  padding: 8px 30px;
   .logo-block {
     max-width: 250px;
     display: block;
@@ -14,14 +14,17 @@ header {
   }
   nav {
     a {
+      font-size: 1.125rem;
       color: $brand-lime-green;
       text-decoration: none;
       transition: all .3s;
-      font-size: 1.125rem;
       &:hover {
         color: darken($brand-lime-green, 25%);
         transition: all .3s;
       }
     }
+  }
+  @media screen and (max-width: $phone) {
+    flex-direction: column;
   }
 }

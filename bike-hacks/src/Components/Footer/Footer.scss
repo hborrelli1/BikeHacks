@@ -1,0 +1,32 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: $brand-dark-green;
+  p {
+    color: $brand-lime-green;
+    margin: 0;
+  }
+  button {
+    display: flex;
+    align-items: center;
+    background-color: unset;
+    border: 0;
+    color: $brand-lime-green;
+    font-size: 1rem;
+    transition: color .3s;
+    img {
+      max-width: 20px;
+      margin-right: 10px;
+      transition: all .3s;
+    }
+    &:hover {
+      cursor: pointer;
+      transition: color .3s;
+      img {
+        transform: translateY(-5px);
+        transition: all .3s;
+      }
+    }
+  }
+}
